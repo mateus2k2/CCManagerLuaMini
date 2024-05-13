@@ -1,0 +1,1 @@
+local a={}function a.createFrame(b)local c,d=b:getSize()local e="Main Page"local f=string.len(e)local g=math.floor(c/2-f/2)frame=b:addFrame():setPosition(1,1):setSize("{parent.w}","{parent.h}")frame:addLabel():setText(e):setPosition(g,2)objects={}return b,frame,objects,"Main"end;function a.updateFrame()end;return a

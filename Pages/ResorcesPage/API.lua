@@ -1,0 +1,1 @@
+local a={}local b=require("/CC/Pages/ResorcesPage/Resorces")function a.handleRequest(c)result=nil;if c.name==nil then return{result="ERROR",errorType="Error in the resorsesModuleAPI.handleRequest. Missing request.name"}else return{result=b.getItem(c.name)}end end;return a
