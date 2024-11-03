@@ -1,1 +1,1 @@
-local a=require("/CC/API")local b=require("/CC/GUI")APIModules={resource=require("/CC/Pages/ResorcesPage/API"),generator=require("/CC/Pages/GeneratorPage/API")}GUIModules={mainPageModule=require("/CC/Pages/mainPage/GUI"),APIGUIModule=require("/CC/Pages/APIPage/GUI"),generatorGUIModule=require("/CC/Pages/GeneratorPage/GUI"),resorcesManagerGUIModule=require("/CC/Pages/ResorcesPage/GUI")}parallel.waitForAny(function()a.startAPI(APIModules)end,function()b.startGUI(GUIModules)end,function()b.basalt.autoUpdate()end)
+print("Hello, World!")
