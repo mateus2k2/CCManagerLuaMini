@@ -1,1 +1,1 @@
-local a={}local b=nil;function a.debugFunc(c)if c.first then end;return b end;return a
+local a={}local b=nil;function a.debugFunc(c)if c.first then local d=require('/Modules/basaltDebug'):setBasalt(c.basalt)b=d:createDebugMenu(c.main,{'debugMenuFrame','debugMenuTextbox','debugMenuCheckbox'})end;return b end;return a
